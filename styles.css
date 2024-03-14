@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ESTILOS GENERALES */
+
+.fuente-clara {
+  color: #eeeeee;
+}
+
+.fuente-oscura {
+  color: #22211f;
+}
+
+.fuente-acento {
+  color: #FF9104 !important;
+}
+
+/* MENU */
+nav ul li {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  color: #eeeeee;
+}
+
+/* ENCABEZADO */
+
+header {
+  background-color: #393E46;
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+header {
+  display: inline-block;
+}
+
+header nav {
+  height: 80px;
+  float: right;
+}
+
+nav ul.menu {
+  float: right;
+}
+
+nav ul.menu li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul.menu li a {
+  color: #eee;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 7px 7px;
+}
+
+/* MENU */
+
+.checkbtn {
+  font-size: 25px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* SECCION 1 */
+#seccion-principal {
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.seccion-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.acerca-de {
+  width: 500px;
+}
+
+.acerca-de h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.acerca-de p {
+  text-align: end;
+}
+
+.imagen-1 {
+  padding: 1em;
+}
+
+/* ------------- SECCION 2 ------------- */
+.seccion-2 img {
+  width: 100%;
+
+}
+
+/* ------------- CARDS ------------- */
+
+.seccion-3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card {
+  width: 400px;
+  background-color: #f4f4f4f4;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card img {
+  width: 100%;
+  min-height: 350px;
+  object-fit: cover;
+}
+
+
+
+.card .content {
+  padding: 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.card .content h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card .content p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.card-button {
+  display: inline-block;
+  background-color: #FF9104;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+
+  /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+
+
+  .checkbtn {
+    display: block;
+  }
+
+  .navbar {
+    height: 0vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #393E46;
+    text-align: center;
+
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+
+  .navbar ul.menu {
+    float: none;
+    display: block;
+    width: 174px;
+    margin: 0 auto;
+    opacity: 0;
+  }
+
+  .navbar ul.menu li a:hover {
+    color: #b59a61;
+  }
+
+  /* ACTIVE */
+  .navbar.active {
+    height: 1000vh;
+  }
+
+  .navbar.active ul.menu {
+    opacity: 1;
+  }
+
+
+}
+
+@media (max-width: 425px) {
+  .card {
+    margin: 0px 20px;
+  }
+
+}
+
+/* ------------- CSS General ------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #5d6063;
+  background-color: #fff
+}
+
+/* ------------- Encabezado Contacto ------------- */
+
+footer {
+
+  background-color: #22211f;
+}
+
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social a {
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.social a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+.social a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.social a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footer-nav {
+  margin: 30px 0;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.footer-nav ul li a {
+  color: white;
+  margin: 20px;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transform: 0.5s;
+}
+.footer-nav ul li a:hover {
+  opacity: 1;
+}
+.form-header {
+
+  text-align: center;
+  background-color: #f6f7f8;
+  border-radius: 3px;
+
+
+  width: 100%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 100%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  padding: 7px 15px;
+  font-size: 14px;
+  color: #22211f;
+  height: 40px !important;
+}
+
+
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-row textarea {
+  font-size: 14px;
+
+
+  background-color: #fff;
+  border: 0;
+  border-radius: 6px;
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px 15px;
+  resize: none;
+
+
+  width: 100%;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #FF9104;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 50px;
+  cursor: pointer;
+
+}
+
+
+.form-row button:hover {
+  background-color: #FFC100;
+}
+
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+.alertas {
+  color: red;
+}
+
+
+
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    width: 60%;
+    height: initial;
+    font-size: 14px;
+  }
+
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 10px;
+    padding-right: 20px;
+  }
+
+  .form-row textarea {
+    width: 60%;
+  }
+
+
+
+}
